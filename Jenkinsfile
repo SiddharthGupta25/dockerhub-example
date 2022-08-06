@@ -7,6 +7,13 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('gsiddharth276-dockerhub')
   }
   stages {
+    
+    stage('Greeting') {
+      steps {
+        sh 'echo Hi, Welcome to Jenkins and Dockerhub Integration'
+      }
+    }
+    
     stage('Build') {
       steps {
         sh 'docker build -t gsiddharth276/dp-alpine:latest .'
