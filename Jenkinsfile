@@ -10,7 +10,7 @@ pipeline {
     
     stage('Greeting') {
       steps {
-        sh 'echo Hi, Welcome to Jenkins and Dockerhub Integration'
+        sh 'echo Hello, Welcome to Jenkins and Dockerhub Integration'
       }
     }
     
